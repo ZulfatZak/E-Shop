@@ -1,0 +1,27 @@
+﻿@using Shop.Data.Models
+@model IEnumerable<Item>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Техника</title>
+</head>
+<body>
+    <h2>Все оборудование</h2>
+    @{ 
+        foreach (var el in Model)
+            {
+            <div>
+                <h2>Наименование: @el.Name</h2>
+
+                <p>Цена: @el.Price.ToString("c")</p>
+            </div>
+            }
+    }
+</body>
+</html>
