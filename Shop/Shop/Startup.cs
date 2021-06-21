@@ -21,7 +21,7 @@ namespace Shop
             services.AddTransient<IAllItems,MockItems>();
             services.AddTransient<IItemsCategory, MockCategory>();//объединение интерфейса и класса который он реализует
             services.AddMvcCore(options => options.EnableEndpointRouting = false).AddRazorViewEngine();
-            services.AddMvc();
+            //services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

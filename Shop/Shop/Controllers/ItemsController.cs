@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Shop.Data.Interfaces;
 using Shop.Data.Models;
+using Shop.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +21,13 @@ namespace Shop.Controllers
         }
         public ViewResult List()
         {
-            var items = _allItems.Items;
-            return View(items);
+            ViewBag.Title = "Страница с техникой";
+            ItemsListViewModel obj = new ItemsListViewModel
+            {
+                AllItems = _allItems.Items,
+                CurrCategory = "Оборудования"
+            };
+            return View(obj);
         }
     }
 }

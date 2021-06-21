@@ -109,3 +109,6 @@ C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\S
 C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Items\List.cshtml.g.cs
 C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorTargetAssemblyInfo.cs
 C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.Views.pdb
+C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs

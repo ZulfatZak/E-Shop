@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "e2FyjX8xr93/wGj00s0+tnhsKxW9zHONLqh652PmFBan42BLRoqJAk3Nt70xpQTiqlFuFwBpcGXN2OOli06OIA==",
+  "dgSpecHash": "plmtm7ydJ4slwfbHDO1t0ABruC9cWnO019lHummI/+HcLYHAQkCWF1vpRdb+OhvwIymqBlwdDeuK+rVLurBIPQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\zulfat.zakirov\\E-ShopProject\\E-Shop\\Shop\\Shop\\Shop.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\zulfat.zakirov\\.nuget\\packages\\bootstrap\\5.0.1\\bootstrap.5.0.1.nupkg.sha512",
     "C:\\Users\\zulfat.zakirov\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.7\\microsoft.aspnet.mvc.5.2.7.nupkg.sha512",
     "C:\\Users\\zulfat.zakirov\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.7\\microsoft.aspnet.razor.3.2.7.nupkg.sha512",
     "C:\\Users\\zulfat.zakirov\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.7\\microsoft.aspnet.webpages.3.2.7.nupkg.sha512",
