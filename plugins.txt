@@ -5,3 +5,6 @@ JSON
 Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
+Microsoft.AspNetCore.Session
+Microsoft.Extensions.Caching.Memory
+Microsoft.AspNetCore.Http.Extensions

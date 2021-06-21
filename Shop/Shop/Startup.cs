@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Shop.Data;
 using Shop.Data.Interfaces;
 using Shop.Data.Mocks;
+using Shop.Data.Models;
 using Shop.Data.Repository;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace Shop
     public class Startup
     {
 
-        private IConfigurationRoot _confString;
+        private readonly IConfigurationRoot _confString;
         public Startup(IWebHostEnvironment hostEnv)
         {
             _confString = new ConfigurationBuilder().SetBasePath(hostEnv.ContentRootPath).AddJsonFile("dbsettings.json").Build();
@@ -32,7 +33,12 @@ namespace Shop
             services.AddDbContext<AppDBContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
             services.AddTransient<IAllItems,ItemRepository>();
             services.AddTransient<IItemsCategory, CategoryRepository>();//объединение интерфейса и класса который он реализует
-            services.AddMvcCore(options => options.EnableEndpointRouting = false).AddRazorViewEngine();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();//работа с сессиями
+            services.AddScoped(sp => ShopCart.GetCart(sp));//разные корзины для разных пользователей
+            //services.AddMvcCore(options => options.EnableEndpointRouting = false).AddRazorViewEngine();//
+            services.AddMvc(option => option.EnableEndpointRouting = false);
+            services.AddMemoryCache();
+            services.AddSession();
             //services.AddMvc();
         }
 
@@ -42,14 +48,17 @@ namespace Shop
             app.UseDeveloperExceptionPage();    //отображение страницы с ошибками
             app.UseStatusCodePages();   //отображение кода страницы
             app.UseStaticFiles();   //отображение css файлов, картинок и тд
-            app.UseMvcWithDefaultRoute();   //вызов контроллера по умолчанию Home
-
-
-            using (var scope = app.ApplicationServices.CreateScope())
+            app.UseSession();
+            //app.UseMvcWithDefaultRoute();   //вызов контроллера по умолчанию Home
+            app.UseMvc(routes =>
             {
-                AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
-                DBObjects.Initial(content);
-            }            
+                routes.MapRoute(name: "desault", template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(name: "categoryFilter", template: "Item/{action}/{category?}", defaults: new { Controller = "Item", action = "List" });
+            });
+
+            using var scope = app.ApplicationServices.CreateScope();
+            AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
+            DBObjects.Initial(content);
         }
     }
 }

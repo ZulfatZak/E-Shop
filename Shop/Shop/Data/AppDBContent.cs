@@ -13,7 +13,10 @@ namespace Shop.Data
         {
 
         }
+
+        //Заведение таблиц в БД
         public DbSet<Item> Item { get; set; }
         public DbSet<Category> Category { get; set; }
+        public DbSet<ShopCartItem> ShopCartItem { get; set; }
     }
 }

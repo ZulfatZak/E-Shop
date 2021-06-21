@@ -155,3 +155,5 @@ C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\bin\Debug\netcoreapp3.1\r
 C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllItems.cshtml.g.cs
+C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\ShopCart\Index.cshtml.g.cs

@@ -19,8 +19,15 @@ using Shop.ViewModel;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\Views\_ViewImports.cshtml"
+using Shop.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c4675bb6a033aff0ec67092a32a7a7c387245e7e", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"648065cbfae7f0dc03208eb59584ff2bd9f7a28d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4eea86d24c6dfd53aba772b7da74a9884c5fbc69", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/bootstrap.min.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -54,7 +61,7 @@ using Shop.ViewModel;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4675bb6a033aff0ec67092a32a7a7c387245e7e4652", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4675bb6a033aff0ec67092a32a7a7c387245e7e4838", async() => {
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
 #nullable restore
 #line 6 "C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\Views\Shared\_Layout.cshtml"
@@ -64,7 +71,7 @@ using Shop.ViewModel;
 #line hidden
 #nullable disable
                 WriteLiteral("</title>\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c4675bb6a033aff0ec67092a32a7a7c387245e7e5229", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c4675bb6a033aff0ec67092a32a7a7c387245e7e5415", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -92,7 +99,7 @@ using Shop.ViewModel;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4675bb6a033aff0ec67092a32a7a7c387245e7e7198", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4675bb6a033aff0ec67092a32a7a7c387245e7e7384", async() => {
                 WriteLiteral(@"
     <header>
         <nav class=""navbar navbar-expand-md navbar-dark fixed-top bg-dark"">
@@ -132,7 +139,7 @@ using Shop.ViewModel;
 #line hidden
 #nullable disable
                 WriteLiteral("\r\n    </div>\r\n    <footer class=\"container\">\r\n        <p class=\"float-end\"><a href=\"#\">Back to top</a></p>\r\n        <p>© 2017–2021 Company, Inc. · <a href=\"#\">Privacy</a> · <a href=\"#\">Terms</a></p>\r\n    </footer>\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4675bb6a033aff0ec67092a32a7a7c387245e7e9596", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4675bb6a033aff0ec67092a32a7a7c387245e7e9782", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

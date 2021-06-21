@@ -1,17 +1,11 @@
-﻿<h1>Все оборудование</h1>
+﻿@using Shop.Data.Models 
+<h1>Все оборудование</h1>
     <h3>@Model.CurrCategory</h3>
     <div class="row mt-5 mb-2">
         @{
-            foreach (var el in Model.AllItems)
+            foreach (Item el in Model.AllItems)
             {
-                <div class="col-lg-3">
-                    <img class="img-thumbnail" src="@el.Image" alt="el.Name" />
-                    <h2>@el.Name</h2>
-                    <h3>@el.ShortDescription</h3>
-                    <p>Цена: @el.Price.ToString("c")</p>
-                    <p>Котегория: @el.Category.CategoryName</p>
-                    <p><a class="btn btn-warning" href="#">Добавить в корзину</a></p>
-                </div>
+                @Html.Partial("AllItems",el)
             }
         }
     </div>
