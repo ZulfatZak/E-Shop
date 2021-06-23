@@ -33,6 +33,7 @@ namespace Shop
             services.AddDbContext<AppDBContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
             services.AddTransient<IAllItems,ItemRepository>();
             services.AddTransient<IItemsCategory, CategoryRepository>();//объединение интерфейса и класса который он реализует
+            services.AddTransient<IAllOrders, OrdersRepository>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();//работа с сессиями
             services.AddScoped(sp => ShopCart.GetCart(sp));//разные корзины для разных пользователей
             //services.AddMvcCore(options => options.EnableEndpointRouting = false).AddRazorViewEngine();//

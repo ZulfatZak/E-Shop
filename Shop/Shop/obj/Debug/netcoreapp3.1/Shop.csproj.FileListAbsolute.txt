@@ -158,3 +158,5 @@ C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\bin\Debug\netcoreapp3.1\r
 C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllItems.cshtml.g.cs
 C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\ShopCart\Index.cshtml.g.cs
 C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Order\CheckOut.cshtml.g.cs
+C:\Users\zulfat.zakirov\E-ShopProject\E-Shop\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Complete.cshtml.g.cs
