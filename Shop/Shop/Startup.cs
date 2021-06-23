@@ -52,7 +52,7 @@ namespace Shop
             //app.UseMvcWithDefaultRoute();   //вызов контроллера по умолчанию Home
             app.UseMvc(routes =>
             {
-                routes.MapRoute(name: "desault", template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
                 routes.MapRoute(name: "categoryFilter", template: "Item/{action}/{category?}", defaults: new { Controller = "Item", action = "List" });
             });
 
